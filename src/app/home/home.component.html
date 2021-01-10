@@ -1,0 +1,31 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>Agrega un tweet</p>
+    </div>
+
+    <div class="col">
+        <p>Tweet  ({{ itemCount }})</p>
+    </div>
+</div>
+
+<div class="container color-light">
+    <div class="col">
+        <p>Que quieres opinar hoy?</p>
+        <form action="">
+            <input type="text" name="item" id="" class="txt" placeholder="Usuario">
+            <input type="text" name="item" id="" class="txt" placeholder="Tweet" [(ngModel)]="goalText">
+            
+            <input type="submit" class="btn" value="{{btnText}}" (click)="addItem()">
+        </form>
+    </div>
+
+    <div class="col">
+
+        <p class="life-container" *ngFor="let goal of goals">
+            {{ goal }}
+        
+        <p class="life-container" *ngFor="let goal of goals">
+            {{ goal }}
+        </p>
+    </div>
+</div>
